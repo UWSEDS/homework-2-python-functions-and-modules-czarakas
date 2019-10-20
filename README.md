@@ -1,11 +1,24 @@
-# HW2 - Using Functions
+# HW2
+Claire Zarakas
 
-Create a python module (a file with extension ‘.py’) with the following functions:
+Due Week of October 21, 2019
 
-1. (1 points) Write a python reads creates a dataframe from a URL that points to a CSV file such as the pronto data or CSVs in data.gov.
+This project directory contains 2 files, as described below:
 
-1. (6 points) Create the function test_create_dataframe that takes as input: (a) a pandas DataFrame and (b) a list of column names. The function returns True if the following conditions hold:
+### ReadInData.py
+
+This python module contains the following 2 functions:
+
+1. create_dataframe: creates a dataframe from a URL that points to a CSV file.
+
+1. test_create_dataframe: takes a pandas DataFrame and list of column names as input, and returns True if the following conditions hold:
 
   - The DataFrame contains only the columns that you specified as the second argument.
   - The values in each column have the same python type
   - There are at least 10 rows in the DataFrame.
+
+### Check_ReadInData.ipynb
+This notebook checks whether the functions in the ReadInData module work as expected, using the remont_Bridge_Hourly_Bicycle_Counts_by_Month_October_2012_to_present dataset downloaded from https://data.seattle.gov/api/views/65db-xm6k/rows.csv?accessType=DOWNLOAD
+
+ReadInData.py requires pandas.
+
